@@ -1,0 +1,135 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Swagger\\Annotations\\Patch'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Patch')),
+            clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+            clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+            clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+            clone $p['Swagger\\Context'],
+            clone $p['Swagger\\Context'],
+            clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+            clone $p['Swagger\\Annotations\\Schema'],
+            clone $p['Swagger\\Context'],
+            clone $p['Swagger\\Context'],
+            clone $p['Swagger\\Annotations\\Parameter'],
+            clone $p['Swagger\\Context'],
+        ],
+        null,
+        [
+            'stdClass' => [
+                'description' => [
+                    'Update an existing project, you can pass all or just a subset of all attributes',
+                    'Returns the updated project',
+                    10 => 'Project ID to update',
+                ],
+                'responses' => [
+                    [
+                        $o[1],
+                    ],
+                ],
+                '_context' => [
+                    $o[5],
+                    $o[4],
+                    $o[3],
+                    6 => $o[9],
+                    $o[8],
+                    10 => $o[11],
+                ],
+                'response' => [
+                    1 => 200,
+                ],
+                'schema' => [
+                    1 => $o[2],
+                    6 => $o[7],
+                ],
+                'ref' => [
+                    2 => '#/definitions/ProjectEntity',
+                    7 => '#/definitions/ProjectEditForm',
+                ],
+                'filename' => [
+                    3 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    8 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    11 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                ],
+                'line' => [
+                    3 => 827,
+                    827,
+                    827,
+                    8 => 827,
+                    827,
+                    11 => 827,
+                ],
+                'method' => [
+                    3 => 'Annotation',
+                    'Annotation',
+                    'Annotation',
+                    8 => 'Annotation',
+                    'Annotation',
+                    11 => 'Annotation',
+                ],
+                'class' => [
+                    3 => 'DocParser',
+                    'DocParser',
+                    'DocParser',
+                    8 => 'DocParser',
+                    'DocParser',
+                    11 => 'DocParser',
+                ],
+                'namespace' => [
+                    3 => 'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                    8 => 'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                    11 => 'Doctrine\\Common\\Annotations',
+                ],
+                'annotations' => [
+                    3 => [
+                        $o[2],
+                    ],
+                    [
+                        $o[1],
+                    ],
+                    [
+                        $o[0],
+                    ],
+                    8 => [
+                        $o[7],
+                    ],
+                    [
+                        $o[6],
+                    ],
+                    11 => [
+                        $o[10],
+                    ],
+                ],
+                'name' => [
+                    6 => 'body',
+                    10 => 'id',
+                ],
+                'in' => [
+                    6 => 'body',
+                    10 => 'path',
+                ],
+                'required' => [
+                    6 => true,
+                    10 => true,
+                ],
+                'type' => [
+                    10 => 'integer',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[6],
+            $o[10],
+        ],
+        []
+    );
+
+}];

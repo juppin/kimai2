@@ -1,0 +1,123 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Swagger\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Post')),
+            clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+            clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+            clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+            clone $p['Swagger\\Context'],
+            clone $p['Swagger\\Context'],
+            clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+            clone $p['Swagger\\Annotations\\Schema'],
+            clone $p['Swagger\\Context'],
+            clone $p['Swagger\\Context'],
+            clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'description' => [
+                    'Creates a new timesheet record for the current user and returns it afterwards.',
+                    'Returns the new created timesheet',
+                ],
+                'responses' => [
+                    [
+                        $o[1],
+                    ],
+                ],
+                '_context' => [
+                    $o[5],
+                    $o[4],
+                    $o[3],
+                    6 => $o[9],
+                    $o[8],
+                ],
+                'response' => [
+                    1 => 200,
+                ],
+                'schema' => [
+                    1 => $o[2],
+                    6 => $o[7],
+                ],
+                'ref' => [
+                    2 => '#/definitions/TimesheetEntity',
+                    7 => '#/definitions/TimesheetEditForm',
+                ],
+                'filename' => [
+                    3 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    8 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                ],
+                'line' => [
+                    3 => 827,
+                    827,
+                    827,
+                    8 => 827,
+                    827,
+                ],
+                'method' => [
+                    3 => 'Annotation',
+                    'Annotation',
+                    'Annotation',
+                    8 => 'Annotation',
+                    'Annotation',
+                ],
+                'class' => [
+                    3 => 'DocParser',
+                    'DocParser',
+                    'DocParser',
+                    8 => 'DocParser',
+                    'DocParser',
+                ],
+                'namespace' => [
+                    3 => 'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                    8 => 'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                ],
+                'annotations' => [
+                    3 => [
+                        $o[2],
+                    ],
+                    [
+                        $o[1],
+                    ],
+                    [
+                        $o[0],
+                    ],
+                    8 => [
+                        $o[7],
+                    ],
+                    [
+                        $o[6],
+                    ],
+                ],
+                'name' => [
+                    6 => 'body',
+                ],
+                'in' => [
+                    6 => 'body',
+                ],
+                'required' => [
+                    6 => true,
+                ],
+            ],
+            'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security' => [
+                'expression' => [
+                    10 => 'is_granted(\'create_own_timesheet\')',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[6],
+            $o[10],
+        ],
+        []
+    );
+
+}];

@@ -1,0 +1,107 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+            clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+            clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+            clone $p['Swagger\\Context'],
+            clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+            clone $p['Swagger\\Context'],
+            clone ($p['FOS\\RestBundle\\Controller\\Annotations\\RequestParam'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\RequestParam')),
+            clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'response' => [
+                    200,
+                ],
+                'description' => [
+                    'Restarts a timesheet record for the same customer, project, activity combination. The current user will be the owner of the new record. Kimai tries to stop running records, which is expected to fail depending on the configured rules. Data will be copied from the original record if requested.',
+                    4 => 'Timesheet record ID to restart',
+                    6 => 'Whether description and tags are copied to the new entry. Allowed values: all, tags, description (default: nothing is copied)',
+                ],
+                'schema' => [
+                    $o[1],
+                ],
+                '_context' => [
+                    $o[3],
+                    $o[2],
+                    4 => $o[5],
+                ],
+                'ref' => [
+                    1 => '#/definitions/TimesheetEntity',
+                ],
+                'filename' => [
+                    2 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    5 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                ],
+                'line' => [
+                    2 => 827,
+                    827,
+                    5 => 827,
+                ],
+                'method' => [
+                    2 => 'Annotation',
+                    'Annotation',
+                    5 => 'Annotation',
+                ],
+                'class' => [
+                    2 => 'DocParser',
+                    'DocParser',
+                    5 => 'DocParser',
+                ],
+                'namespace' => [
+                    2 => 'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                    5 => 'Doctrine\\Common\\Annotations',
+                ],
+                'annotations' => [
+                    2 => [
+                        $o[1],
+                    ],
+                    [
+                        $o[0],
+                    ],
+                    5 => [
+                        $o[4],
+                    ],
+                ],
+                'name' => [
+                    4 => 'id',
+                    6 => 'copy',
+                ],
+                'in' => [
+                    4 => 'path',
+                ],
+                'required' => [
+                    4 => true,
+                ],
+                'type' => [
+                    4 => 'integer',
+                ],
+                'requirements' => [
+                    6 => 'all|tags|description',
+                ],
+                'nullable' => [
+                    6 => true,
+                ],
+            ],
+            'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security' => [
+                'expression' => [
+                    7 => 'is_granted(\'start_own_timesheet\') or is_granted(\'start_other_timesheet\')',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[4],
+            $o[6],
+            $o[7],
+        ],
+        []
+    );
+
+}];

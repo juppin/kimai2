@@ -1,0 +1,132 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+            clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+            clone ($p['Swagger\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Items')),
+            clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+            clone $p['Swagger\\Context'],
+            clone $p['Swagger\\Context'],
+            clone ($p['FOS\\RestBundle\\Controller\\Annotations\\QueryParam'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\QueryParam')),
+            clone $p['FOS\\RestBundle\\Controller\\Annotations\\QueryParam'],
+            clone $p['FOS\\RestBundle\\Controller\\Annotations\\QueryParam'],
+            clone $p['FOS\\RestBundle\\Controller\\Annotations\\QueryParam'],
+            clone $p['FOS\\RestBundle\\Controller\\Annotations\\QueryParam'],
+            clone $p['FOS\\RestBundle\\Controller\\Annotations\\QueryParam'],
+        ],
+        null,
+        [
+            'stdClass' => [
+                'response' => [
+                    200,
+                ],
+                'description' => [
+                    'Returns a collection of activity entities',
+                    6 => 'Project ID to filter activities. If none is provided, all activities will be returned.',
+                    'Visibility status to filter activities. Allowed values: 1=visible, 2=hidden, 3=all (default: 1)',
+                    'Use if you want to fetch only global activities. Allowed values: true (default: false)',
+                    'Use if you don\'t want global activities to be listed first. Allowed values: false (default: true)',
+                    'The field by which results will be ordered. Allowed values: id, name, project (default: name)',
+                    'The result order. Allowed values: ASC, DESC (default: ASC)',
+                ],
+                'schema' => [
+                    $o[1],
+                ],
+                '_context' => [
+                    $o[5],
+                    $o[4],
+                    $o[3],
+                ],
+                'type' => [
+                    1 => 'array',
+                ],
+                'items' => [
+                    1 => $o[2],
+                ],
+                'ref' => [
+                    2 => '#/definitions/ActivityCollection',
+                ],
+                'filename' => [
+                    3 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                ],
+                'line' => [
+                    3 => 827,
+                    827,
+                    827,
+                ],
+                'method' => [
+                    3 => 'Annotation',
+                    'Annotation',
+                    'Annotation',
+                ],
+                'class' => [
+                    3 => 'DocParser',
+                    'DocParser',
+                    'DocParser',
+                ],
+                'namespace' => [
+                    3 => 'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                ],
+                'annotations' => [
+                    3 => [
+                        $o[2],
+                    ],
+                    [
+                        $o[1],
+                    ],
+                    [
+                        $o[0],
+                    ],
+                ],
+                'requirements' => [
+                    6 => '\\d+',
+                    '1|2|3',
+                    'true',
+                    'false',
+                    'id|name|project',
+                    'ASC|DESC',
+                ],
+                'name' => [
+                    6 => 'project',
+                    'visible',
+                    'globals',
+                    'globalsFirst',
+                    'orderBy',
+                    'order',
+                ],
+                'strict' => [
+                    6 => true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                ],
+                'nullable' => [
+                    6 => true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[6],
+            $o[7],
+            $o[8],
+            $o[9],
+            $o[10],
+            $o[11],
+        ],
+        []
+    );
+
+}];

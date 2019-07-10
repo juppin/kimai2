@@ -1,0 +1,65 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+            clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+            clone ($p['FOS\\RestBundle\\Controller\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\Get')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'response' => [
+                    200,
+                ],
+                'description' => [
+                    'A simple route that returns a \'pong\', which you can use for testing the API',
+                ],
+                'examples' => [
+                    [
+                        '{\'message\': \'pong\'}',
+                    ],
+                ],
+                '_context' => [
+                    $o[1],
+                ],
+                'filename' => [
+                    1 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                ],
+                'line' => [
+                    1 => 827,
+                ],
+                'method' => [
+                    1 => 'Annotation',
+                ],
+                'class' => [
+                    1 => 'DocParser',
+                ],
+                'namespace' => [
+                    1 => 'Doctrine\\Common\\Annotations',
+                ],
+                'annotations' => [
+                    1 => [
+                        $o[0],
+                    ],
+                ],
+            ],
+            'Symfony\\Component\\Routing\\Annotation\\Route' => [
+                'path' => [
+                    2 => '/ping',
+                ],
+                'methods' => [
+                    2 => [
+                        'GET',
+                    ],
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[2],
+        ],
+        []
+    );
+
+}];

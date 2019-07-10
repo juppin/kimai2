@@ -1,0 +1,96 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Swagger\\Annotations\\Delete'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Delete')),
+            clone ($p['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+            clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+            clone $p['Swagger\\Context'],
+            clone ($p['Swagger\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Parameter')),
+            clone $p['Swagger\\Context'],
+            clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'responses' => [
+                    [
+                        $o[1],
+                    ],
+                ],
+                '_context' => [
+                    $o[3],
+                    $o[2],
+                    4 => $o[5],
+                ],
+                'response' => [
+                    1 => 204,
+                ],
+                'description' => [
+                    1 => 'Delete one tag',
+                    4 => 'Tag ID to delete',
+                ],
+                'filename' => [
+                    2 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    5 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                ],
+                'line' => [
+                    2 => 827,
+                    827,
+                    5 => 827,
+                ],
+                'method' => [
+                    2 => 'Annotation',
+                    'Annotation',
+                    5 => 'Annotation',
+                ],
+                'class' => [
+                    2 => 'DocParser',
+                    'DocParser',
+                    5 => 'DocParser',
+                ],
+                'namespace' => [
+                    2 => 'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                    5 => 'Doctrine\\Common\\Annotations',
+                ],
+                'annotations' => [
+                    2 => [
+                        $o[1],
+                    ],
+                    [
+                        $o[0],
+                    ],
+                    5 => [
+                        $o[4],
+                    ],
+                ],
+                'name' => [
+                    4 => 'id',
+                ],
+                'in' => [
+                    4 => 'path',
+                ],
+                'required' => [
+                    4 => true,
+                ],
+                'type' => [
+                    4 => 'integer',
+                ],
+            ],
+            'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Security' => [
+                'expression' => [
+                    6 => 'is_granted(\'delete_tag\')',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[4],
+            $o[6],
+        ],
+        []
+    );
+
+}];

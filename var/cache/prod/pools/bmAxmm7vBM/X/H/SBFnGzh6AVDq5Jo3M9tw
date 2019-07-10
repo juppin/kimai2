@@ -1,0 +1,65 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+            clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+            clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+            clone $p['Swagger\\Context'],
+        ],
+        null,
+        [
+            'stdClass' => [
+                'response' => [
+                    200,
+                ],
+                'description' => [
+                    'Returns one project entity',
+                ],
+                'schema' => [
+                    $o[1],
+                ],
+                '_context' => [
+                    $o[3],
+                    $o[2],
+                ],
+                'ref' => [
+                    1 => '#/definitions/ProjectEntity',
+                ],
+                'filename' => [
+                    2 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                ],
+                'line' => [
+                    2 => 827,
+                    827,
+                ],
+                'method' => [
+                    2 => 'Annotation',
+                    'Annotation',
+                ],
+                'class' => [
+                    2 => 'DocParser',
+                    'DocParser',
+                ],
+                'namespace' => [
+                    2 => 'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                ],
+                'annotations' => [
+                    2 => [
+                        $o[1],
+                    ],
+                    [
+                        $o[0],
+                    ],
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+
+}];

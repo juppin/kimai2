@@ -1,0 +1,111 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Swagger\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Response')),
+            clone ($p['Swagger\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Schema')),
+            clone ($p['Swagger\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Annotations\\Items')),
+            clone ($p['Swagger\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Swagger\\Context')),
+            clone $p['Swagger\\Context'],
+            clone $p['Swagger\\Context'],
+            clone ($p['FOS\\RestBundle\\Controller\\Annotations\\QueryParam'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('FOS\\RestBundle\\Controller\\Annotations\\QueryParam')),
+            clone $p['FOS\\RestBundle\\Controller\\Annotations\\QueryParam'],
+            clone $p['FOS\\RestBundle\\Controller\\Annotations\\QueryParam'],
+        ],
+        null,
+        [
+            'stdClass' => [
+                'response' => [
+                    200,
+                ],
+                'description' => [
+                    'Returns a collection of customer entities',
+                    6 => 'Visibility status to filter activities (1=visible, 2=hidden, 3=both)',
+                    'The result order. Allowed values: ASC, DESC (default: ASC)',
+                    'The field by which results will be ordered. Allowed values: id, name (default: name)',
+                ],
+                'schema' => [
+                    $o[1],
+                ],
+                '_context' => [
+                    $o[5],
+                    $o[4],
+                    $o[3],
+                ],
+                'type' => [
+                    1 => 'array',
+                ],
+                'items' => [
+                    1 => $o[2],
+                ],
+                'ref' => [
+                    2 => '#/definitions/CustomerCollection',
+                ],
+                'filename' => [
+                    3 => '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                    '/var/www/kimai2/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                ],
+                'line' => [
+                    3 => 827,
+                    827,
+                    827,
+                ],
+                'method' => [
+                    3 => 'Annotation',
+                    'Annotation',
+                    'Annotation',
+                ],
+                'class' => [
+                    3 => 'DocParser',
+                    'DocParser',
+                    'DocParser',
+                ],
+                'namespace' => [
+                    3 => 'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                    'Doctrine\\Common\\Annotations',
+                ],
+                'annotations' => [
+                    3 => [
+                        $o[2],
+                    ],
+                    [
+                        $o[1],
+                    ],
+                    [
+                        $o[0],
+                    ],
+                ],
+                'requirements' => [
+                    6 => '\\d+',
+                    'ASC|DESC',
+                    'id|name',
+                ],
+                'name' => [
+                    6 => 'visible',
+                    'order',
+                    'orderBy',
+                ],
+                'strict' => [
+                    6 => true,
+                    true,
+                    true,
+                ],
+                'nullable' => [
+                    6 => true,
+                    true,
+                    true,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[6],
+            $o[7],
+            $o[8],
+        ],
+        []
+    );
+
+}];
